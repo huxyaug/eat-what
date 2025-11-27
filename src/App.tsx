@@ -10,7 +10,6 @@ import Settings from './pages/Settings'
 import AuthPhone from './pages/AuthPhone'
 import BottomNav from './components/BottomNav'
 import AIChat from './pages/AIChat'
-import AuthPrompt from './components/AuthPrompt'
 
 function RequireAuth() {
   const { user, initialized } = useApp()
@@ -43,7 +42,6 @@ export default function App() {
             
           </Route>
         </Routes>
-        <AuthPrompt />
         <BottomNav />
       </div>
     </AppProvider>

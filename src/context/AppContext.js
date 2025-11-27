@@ -43,11 +43,19 @@ export function AppProvider({ children }) {
     };
     useEffect(() => {
         if (user) {
+            try {
+                localStorage.setItem('user_id', user.id);
+            }
+            catch { }
             refreshCategories();
             refreshDishes();
         }
         else {
             setDishes([]);
+            try {
+                localStorage.removeItem('user_id');
+            }
+            catch { }
         }
     }, [user]);
     const value = useMemo(() => ({ user, initialized, dishes, categories, refreshDishes, refreshCategories }), [user, initialized, dishes, categories]);
