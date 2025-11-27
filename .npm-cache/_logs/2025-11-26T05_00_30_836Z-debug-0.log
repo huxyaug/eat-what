@@ -1,0 +1,257 @@
+0 verbose cli E:\nodejs\node.exe E:\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v24.11.1
+3 silly config load:file:E:\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Hu\Desktop\Eat-What-APP\.npmrc
+5 silly config load:file:C:\Users\Hu\.npmrc
+6 silly config load:file:E:\nodeJs\node_global\etc\npmrc
+7 verbose title npm install lucide-react
+8 verbose argv "install" "lucide-react" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\Hu\Desktop\Eat-What-APP\.npm-cache\_logs\2025-11-26T05_00_30_836Z-
+10 verbose logfile C:\Users\Hu\Desktop\Eat-What-APP\.npm-cache\_logs\2025-11-26T05_00_30_836Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest lucide-react@*
+15 silly packumentCache full:https://registry.npmmirror.com/lucide-react cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmmirror.com/lucide-react 239ms (cache miss)
+18 silly packumentCache full:https://registry.npmmirror.com/lucide-react set size:396426 disposed:false
+19 silly fetch manifest react@^18.3.1
+20 silly packumentCache full:https://registry.npmmirror.com/react cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/react 81ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmmirror.com/react set size:6000053 disposed:false
+23 silly placeDep ROOT lucide-react@0.554.0 OK for: eatwhat@0.0.0 want: *
+24 silly reify moves {}
+25 silly audit bulk request {
+25 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+25 silly audit   '@babel/code-frame': [ '7.27.1' ],
+25 silly audit   '@babel/compat-data': [ '7.28.5' ],
+25 silly audit   '@babel/core': [ '7.28.5' ],
+25 silly audit   '@babel/generator': [ '7.28.5' ],
+25 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+25 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+25 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+25 silly audit   '@babel/helper-module-transforms': [ '7.28.3' ],
+25 silly audit   '@babel/helper-plugin-utils': [ '7.27.1' ],
+25 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+25 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+25 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+25 silly audit   '@babel/helpers': [ '7.28.4' ],
+25 silly audit   '@babel/parser': [ '7.28.5' ],
+25 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.27.1' ],
+25 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.27.1' ],
+25 silly audit   '@babel/template': [ '7.27.2' ],
+25 silly audit   '@babel/traverse': [ '7.28.5' ],
+25 silly audit   '@babel/types': [ '7.28.5' ],
+25 silly audit   '@esbuild/aix-ppc64': [ '0.21.5' ],
+25 silly audit   '@esbuild/android-arm': [ '0.21.5' ],
+25 silly audit   '@esbuild/android-arm64': [ '0.21.5' ],
+25 silly audit   '@esbuild/android-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/darwin-arm64': [ '0.21.5' ],
+25 silly audit   '@esbuild/darwin-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/freebsd-arm64': [ '0.21.5' ],
+25 silly audit   '@esbuild/freebsd-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-arm': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-arm64': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-ia32': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-loong64': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-mips64el': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-ppc64': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-riscv64': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-s390x': [ '0.21.5' ],
+25 silly audit   '@esbuild/linux-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/netbsd-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/openbsd-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/sunos-x64': [ '0.21.5' ],
+25 silly audit   '@esbuild/win32-arm64': [ '0.21.5' ],
+25 silly audit   '@esbuild/win32-ia32': [ '0.21.5' ],
+25 silly audit   '@esbuild/win32-x64': [ '0.21.5' ],
+25 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+25 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+25 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+25 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+25 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+25 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+25 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+25 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+25 silly audit   '@remix-run/router': [ '1.23.1' ],
+25 silly audit   '@rolldown/pluginutils': [ '1.0.0-beta.27' ],
+25 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-android-arm64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-darwin-arm64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-darwin-x64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-freebsd-x64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.53.3' ],
+25 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.53.3' ],
+25 silly audit   '@supabase/auth-js': [ '2.84.0' ],
+25 silly audit   '@supabase/functions-js': [ '2.84.0' ],
+25 silly audit   '@supabase/postgrest-js': [ '2.84.0' ],
+25 silly audit   '@supabase/realtime-js': [ '2.84.0' ],
+25 silly audit   '@supabase/storage-js': [ '2.84.0' ],
+25 silly audit   '@supabase/supabase-js': [ '2.84.0' ],
+25 silly audit   '@types/babel__core': [ '7.20.5' ],
+25 silly audit   '@types/babel__generator': [ '7.27.0' ],
+25 silly audit   '@types/babel__template': [ '7.4.4' ],
+25 silly audit   '@types/babel__traverse': [ '7.28.0' ],
+25 silly audit   '@types/estree': [ '1.0.8' ],
+25 silly audit   '@types/node': [ '24.10.1' ],
+25 silly audit   '@types/phoenix': [ '1.6.6' ],
+25 silly audit   '@types/prop-types': [ '15.7.15' ],
+25 silly audit   '@types/react': [ '18.3.27' ],
+25 silly audit   '@types/react-dom': [ '18.3.7' ],
+25 silly audit   '@types/ws': [ '8.18.1' ],
+25 silly audit   '@vitejs/plugin-react': [ '4.7.0' ],
+25 silly audit   'any-promise': [ '1.3.0' ],
+25 silly audit   anymatch: [ '3.1.3' ],
+25 silly audit   arg: [ '5.0.2' ],
+25 silly audit   autoprefixer: [ '10.4.22' ],
+25 silly audit   'baseline-browser-mapping': [ '2.8.31' ],
+25 silly audit   'binary-extensions': [ '2.3.0' ],
+25 silly audit   braces: [ '3.0.3' ],
+25 silly audit   browserslist: [ '4.28.0' ],
+25 silly audit   'camelcase-css': [ '2.0.1' ],
+25 silly audit   'caniuse-lite': [ '1.0.30001757' ],
+25 silly audit   chokidar: [ '3.6.0' ],
+25 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+25 silly audit   commander: [ '4.1.1' ],
+25 silly audit   'convert-source-map': [ '2.0.0' ],
+25 silly audit   cssesc: [ '3.0.0' ],
+25 silly audit   csstype: [ '3.2.3' ],
+25 silly audit   debug: [ '4.4.3' ],
+25 silly audit   didyoumean: [ '1.2.2' ],
+25 silly audit   dlv: [ '1.1.3' ],
+25 silly audit   'electron-to-chromium': [ '1.5.260' ],
+25 silly audit   esbuild: [ '0.21.5' ],
+25 silly audit   escalade: [ '3.2.0' ],
+25 silly audit   'fast-glob': [ '3.3.3' ],
+25 silly audit   fastq: [ '1.19.1' ],
+25 silly audit   'fill-range': [ '7.1.1' ],
+25 silly audit   'fraction.js': [ '5.3.4' ],
+25 silly audit   fsevents: [ '2.3.3' ],
+25 silly audit   'function-bind': [ '1.1.2' ],
+25 silly audit   gensync: [ '1.0.0-beta.2' ],
+25 silly audit   hasown: [ '2.0.2' ],
+25 silly audit   'is-binary-path': [ '2.1.0' ],
+25 silly audit   'is-core-module': [ '2.16.1' ],
+25 silly audit   'is-extglob': [ '2.1.1' ],
+25 silly audit   'is-glob': [ '4.0.3' ],
+25 silly audit   'is-number': [ '7.0.0' ],
+25 silly audit   jiti: [ '1.21.7' ],
+25 silly audit   'js-tokens': [ '4.0.0' ],
+25 silly audit   jsesc: [ '3.1.0' ],
+25 silly audit   json5: [ '2.2.3' ],
+25 silly audit   lilconfig: [ '3.1.3' ],
+25 silly audit   'lines-and-columns': [ '1.2.4' ],
+25 silly audit   'loose-envify': [ '1.4.0' ],
+25 silly audit   'lru-cache': [ '5.1.1' ],
+25 silly audit   merge2: [ '1.4.1' ],
+25 silly audit   micromatch: [ '4.0.8' ],
+25 silly audit   ms: [ '2.1.3' ],
+25 silly audit   mz: [ '2.7.0' ],
+25 silly audit   nanoid: [ '3.3.11' ],
+25 silly audit   'node-releases': [ '2.0.27' ],
+25 silly audit   'normalize-path': [ '3.0.0' ],
+25 silly audit   'normalize-range': [ '0.1.2' ],
+25 silly audit   'object-assign': [ '4.1.1' ],
+25 silly audit   'object-hash': [ '3.0.0' ],
+25 silly audit   'path-parse': [ '1.0.7' ],
+25 silly audit   picocolors: [ '1.1.1' ],
+25 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+25 silly audit   pify: [ '2.3.0' ],
+25 silly audit   pirates: [ '4.0.7' ],
+25 silly audit   postcss: [ '8.5.6' ],
+25 silly audit   'postcss-import': [ '15.1.0' ],
+25 silly audit   'postcss-js': [ '4.1.0' ],
+25 silly audit   'postcss-load-config': [ '6.0.1' ],
+25 silly audit   'postcss-nested': [ '6.2.0' ],
+25 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+25 silly audit   'postcss-value-parser': [ '4.2.0' ],
+25 silly audit   'queue-microtask': [ '1.2.3' ],
+25 silly audit   react: [ '18.3.1' ],
+25 silly audit   'react-dom': [ '18.3.1' ],
+25 silly audit   'react-refresh': [ '0.17.0' ],
+25 silly audit   'react-router': [ '6.30.2' ],
+25 silly audit   'react-router-dom': [ '6.30.2' ],
+25 silly audit   'read-cache': [ '1.0.0' ],
+25 silly audit   readdirp: [ '3.6.0' ],
+25 silly audit   resolve: [ '1.22.11' ],
+25 silly audit   reusify: [ '1.1.0' ],
+25 silly audit   rollup: [ '4.53.3' ],
+25 silly audit   'run-parallel': [ '1.2.0' ],
+25 silly audit   scheduler: [ '0.23.2' ],
+25 silly audit   semver: [ '6.3.1' ],
+25 silly audit   'source-map-js': [ '1.2.1' ],
+25 silly audit   sucrase: [ '3.35.1' ],
+25 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+25 silly audit   tailwindcss: [ '3.4.18' ],
+25 silly audit   thenify: [ '3.3.1' ],
+25 silly audit   'thenify-all': [ '1.6.0' ],
+25 silly audit   tinyglobby: [ '0.2.15' ],
+25 silly audit   fdir: [ '6.5.0' ],
+25 silly audit   'to-regex-range': [ '5.0.1' ],
+25 silly audit   'ts-interface-checker': [ '0.1.13' ],
+25 silly audit   tslib: [ '2.8.1' ],
+25 silly audit   typescript: [ '5.9.3' ],
+25 silly audit   'undici-types': [ '7.16.0' ],
+25 silly audit   'update-browserslist-db': [ '1.1.4' ],
+25 silly audit   'util-deprecate': [ '1.0.2' ],
+25 silly audit   vite: [ '5.4.21' ],
+25 silly audit   ws: [ '8.18.3' ],
+25 silly audit   yallist: [ '3.1.1' ],
+25 silly audit   'lucide-react': [ '0.554.0' ]
+25 silly audit }
+26 http cache lucide-react@https://registry.npmmirror.com/lucide-react/-/lucide-react-0.554.0.tgz 0ms (cache hit)
+27 silly tarball no local data for lucide-react@https://registry.npmmirror.com/lucide-react/-/lucide-react-0.554.0.tgz. Extracting by manifest.
+28 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 15ms
+29 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+29 verbose audit error     at E:\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:103:15
+29 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+29 verbose audit error     at async #getReport (E:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:275:19)
+29 verbose audit error     at async AuditReport.run (E:\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:100:19) {
+29 verbose audit error   headers: [Object: null prototype] {
+29 verbose audit error     server: [ 'Tengine' ],
+29 verbose audit error     date: [ 'Wed, 26 Nov 2025 05:00:30 GMT' ],
+29 verbose audit error     'content-type': [ 'application/json' ],
+29 verbose audit error     'transfer-encoding': [ 'chunked' ],
+29 verbose audit error     connection: [ 'keep-alive' ],
+29 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+29 verbose audit error     via: [ 'kunlun19.cn7892[,404666]' ],
+29 verbose audit error     'timing-allow-origin': [ '*' ],
+29 verbose audit error     eagleid: [ 'b7f0ed2717641332304911581e' ],
+29 verbose audit error     'x-fetch-attempts': [ '1' ]
+29 verbose audit error   },
+29 verbose audit error   statusCode: 404,
+29 verbose audit error   code: 'E404',
+29 verbose audit error   method: 'POST',
+29 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk',
+29 verbose audit error   body: {
+29 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+29 verbose audit error   },
+29 verbose audit error   pkgid: undefined
+29 verbose audit error }
+30 silly audit error [object Object]
+31 silly audit report null
+32 http fetch GET 200 https://cdn.npmmirror.com/packages/lucide-react/0.554.0/lucide-react-0.554.0.tgz 5296ms (cache miss)
+33 silly ADD node_modules/lucide-react
+34 verbose cwd C:\Users\Hu\Desktop\Eat-What-APP
+35 verbose os Windows_NT 10.0.19045
+36 verbose node v24.11.1
+37 verbose npm  v11.6.2
+38 verbose exit 0
+39 info ok
