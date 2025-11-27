@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWhat</title>
+    <meta http-equiv="refresh" content="0; url=/eat-what/" />
+  </head>
+  <body>
+    <div>Redirecting...</div>
+    <script>
+      (function(){
+        const base = '/eat-what/';
+        const path = location.pathname.replace(/^.*eat-what\//,'');
+        location.replace(base + (path || ''));
+      })();
+    </script>
+  </body>
+</html>
