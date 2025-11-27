@@ -1,0 +1,221 @@
+{
+  "categories": [
+    "日常/早餐/中式",
+    "日常/早餐/西式",
+    "外卖/快餐/面食",
+    "外卖/快餐/盖饭",
+    "外卖/快餐/小吃",
+    "外卖/快餐/鸡肉",
+    "外卖/快餐/牛肉",
+    "外卖/快餐/饮品",
+    "正餐/火锅",
+    "正餐/川菜",
+    "正餐/烤肉",
+    "正餐/粤菜",
+    "正餐/家常菜",
+    "正餐/日料",
+    "正餐/西餐",
+    "休闲/下午茶",
+    "休闲/夜宵/烧烤",
+    "休闲/夜宵/炸物",
+    "休闲/饮品/奶茶"
+  ],
+  "dishes": [
+    {"name":"油条","calories":380,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/chinese,breakfast,fried?random=1"},
+    {"name":"豆浆","calories":150,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/soy,milk,breakfast?random=2"},
+    {"name":"煎饼果子","calories":520,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/pancake,streetfood?random=3"},
+    {"name":"小笼包","calories":420,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/dumplings,steamed?random=4"},
+    {"name":"生煎","calories":480,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/dumplings,pan-fried?random=5"},
+    {"name":"白粥配咸菜","calories":260,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/congee,cantonese?random=6"},
+    {"name":"广式肠粉","calories":420,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/rice,roll,dim sum?random=7"},
+    {"name":"三明治","calories":430,"category":"日常/早餐/西式","image_url":"https://loremflickr.com/400/300/sandwich,breakfast?random=8"},
+    {"name":"吐司配鸡蛋","calories":360,"category":"日常/早餐/西式","image_url":"https://loremflickr.com/400/300/toast,egg?random=9"},
+    {"name":"燕麦牛奶","calories":280,"category":"日常/早餐/西式","image_url":"https://loremflickr.com/400/300/oatmeal,breakfast?random=10"},
+
+    {"name":"兰州拉面","calories":650,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/ramen,noodles,beef?random=11"},
+    {"name":"重庆小面","calories":620,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/spicy,noodles?random=12"},
+    {"name":"刀削面","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,chinese?random=13"},
+    {"name":"螺蛳粉","calories":580,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,soup,asian?random=14"},
+    {"name":"红烧牛肉面","calories":700,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/beef,noodles,soup?random=15"},
+
+    {"name":"黄焖鸡米饭","calories":780,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/chicken,rice,bowl?random=16"},
+    {"name":"卤肉饭","calories":720,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/pork,rice,bowl?random=17"},
+    {"name":"猪脚饭","calories":820,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/pork,leg,rice?random=18"},
+    {"name":"咖喱鸡饭","calories":680,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/curry,chicken,rice?random=19"},
+    {"name":"麻婆豆腐盖饭","calories":600,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/tofu,spicy,rice?random=20"},
+
+    {"name":"炸酱面","calories":710,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,beijing?random=21"},
+    {"name":"鸡丝凉面","calories":520,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/cold,noodles,chicken?random=22"},
+    {"name":"米线过桥","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,rice,bridge?random=23"},
+
+    {"name":"烤冷面","calories":560,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/streetfood,noodles,grill?random=24"},
+    {"name":"凉皮","calories":450,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/cold,noodles,xi an?random=25"},
+    {"name":"肉夹馍","calories":680,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/flatbread,meat?random=26"},
+    {"name":"煎饺","calories":470,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/dumplings,pan-fried?random=27"},
+    {"name":"灌汤包","calories":520,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/dumplings,soup?random=28"},
+
+    {"name":"麦辣鸡翅套餐","calories":820,"category":"外卖/快餐/鸡肉","image_url":"https://loremflickr.com/400/300/fried,chicken,fastfood?random=29"},
+    {"name":"肯德基全家桶","calories":1200,"category":"外卖/快餐/鸡肉","image_url":"https://loremflickr.com/400/300/fried,chicken,bucket?random=30"},
+    {"name":"盐酥鸡","calories":760,"category":"外卖/快餐/鸡肉","image_url":"https://loremflickr.com/400/300/fried,chicken,taiwan?random=31"},
+    {"name":"宫保鸡丁","calories":700,"category":"外卖/快餐/鸡肉","image_url":"https://loremflickr.com/400/300/chicken,stir fry,spicy?random=32"},
+
+    {"name":"牛肉汉堡套餐","calories":900,"category":"外卖/快餐/牛肉","image_url":"https://loremflickr.com/400/300/burger,beef,fastfood?random=33"},
+    {"name":"牛肉卷饼","calories":780,"category":"外卖/快餐/牛肉","image_url":"https://loremflickr.com/400/300/beef,wrap?random=34"},
+
+    {"name":"珍珠奶茶","calories":420,"category":"外卖/快餐/饮品","image_url":"https://loremflickr.com/400/300/milk,tea,boba?random=35"},
+    {"name":"柠檬茶","calories":180,"category":"外卖/快餐/饮品","image_url":"https://loremflickr.com/400/300/lemon,tea,drink?random=36"},
+
+    {"name":"重庆火锅","calories":980,"category":"正餐/火锅","image_url":"https://loremflickr.com/400/300/hotpot,spicy,chinese?random=37"},
+    {"name":"四川冒菜","calories":760,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/spicy,sichuan?random=38"},
+    {"name":"麻辣香锅","calories":860,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/spicy,wok?random=39"},
+    {"name":"酸菜鱼","calories":780,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/fish,sour,spicy?random=40"},
+    {"name":"水煮牛肉","calories":920,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/beef,spicy,sichuan?random=41"},
+
+    {"name":"烤肉拼盘","calories":950,"category":"正餐/烤肉","image_url":"https://loremflickr.com/400/300/barbecue,grill,meat?random=42"},
+    {"name":"羊肉串","calories":680,"category":"正餐/烤肉","image_url":"https://loremflickr.com/400/300/kebab,lamb?random=43"},
+
+    {"name":"白切鸡","calories":540,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/cantonese,chicken?random=44"},
+    {"name":"叉烧","calories":720,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/char,siew,pork?random=45"},
+    {"name":"干炒牛河","calories":740,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/beef,ho fun,stir fry?random=46"},
+
+    {"name":"家常红烧肉","calories":860,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,braised,chinese?random=47"},
+    {"name":"清炒时蔬","calories":240,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/vegetable,stir fry?random=48"},
+    {"name":"番茄炒蛋","calories":380,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/tomato,egg,stir fry?random=49"},
+    {"name":"地三鲜","calories":520,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/eggplant,potato,pepper?random=50"},
+
+    {"name":"寿司拼盘","calories":520,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/sushi,japanese,seafood?random=51"},
+    {"name":"刺身","calories":380,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/sashimi,raw fish?random=52"},
+    {"name":"拉面(日式)","calories":630,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/ramen,japanese?random=53"},
+
+    {"name":"披萨","calories":860,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/pizza,italian,cheese?random=54"},
+    {"name":"牛排","calories":820,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/steak,beef,western?random=55"},
+    {"name":"意大利面","calories":700,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/pasta,italian?random=56"},
+
+    {"name":"奶茶","calories":380,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/milk,tea,boba?random=57"},
+    {"name":"芒果奶昔","calories":320,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/mango,smoothie?random=58"},
+    {"name":"芝士蛋糕","calories":520,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/cheesecake,dessert?random=59"},
+    {"name":"泡芙","calories":480,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/cream,puff,dessert?random=60"},
+
+    {"name":"炸鸡块","calories":820,"category":"休闲/夜宵/炸物","image_url":"https://loremflickr.com/400/300/fried,chicken,nuggets?random=61"},
+    {"name":"薯条","calories":520,"category":"休闲/夜宵/炸物","image_url":"https://loremflickr.com/400/300/french,fries?random=62"},
+    {"name":"章鱼小丸子","calories":560,"category":"休闲/夜宵/炸物","image_url":"https://loremflickr.com/400/300/takoyaki,streetfood?random=63"},
+
+    {"name":"烤串拼盘","calories":900,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/barbecue,kebab?random=64"},
+    {"name":"烤鸡翅","calories":740,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/grilled,chicken,wings?random=65"},
+    {"name":"烤海鲜","calories":780,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/grilled,seafood?random=66"},
+
+    {"name":"牛肉粉","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,beef,soup?random=67"},
+    {"name":"酸辣粉","calories":560,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,spicy,sour?random=68"},
+    {"name":"桂林米粉","calories":600,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/rice,noodles,china?random=69"},
+    {"name":"手抓饼","calories":620,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/flatbread,streetfood?random=70"},
+    {"name":"鸡蛋灌饼","calories":640,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/egg,flatbread?random=71"},
+    {"name":"锅贴","calories":520,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/potsticker,dumplings?random=72"},
+    {"name":"烤鱼","calories":820,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/grilled,fish,spicy?random=73"},
+    {"name":"葱油拌面","calories":560,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/noodles,scallion?random=74"},
+    {"name":"炒饭","calories":680,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/fried,rice?random=75"},
+    {"name":"蔬菜沙拉","calories":260,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/salad,healthy?random=76"},
+    {"name":"米村拌饭","calories":680,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/rice,bowl,asian?random=77"},
+    {"name":"韩式石锅拌饭","calories":720,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/bibimbap,korean?random=78"},
+    {"name":"椒盐排骨","calories":840,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,ribs,crispy?random=79"}
+    ,{"name":"北京烤鸭","calories":900,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/duck,roast,chinese?random=80"}
+    ,{"name":"宫保鸡丁","calories":700,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/chicken,stir fry,spicy?random=81"}
+    ,{"name":"鱼香肉丝","calories":680,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/pork,stir fry,spicy?random=82"}
+    ,{"name":"回锅肉","calories":820,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/pork,twice cooked,spicy?random=83"}
+    ,{"name":"口水鸡","calories":640,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/chicken,spicy,sichuan?random=84"}
+    ,{"name":"辣子鸡","calories":780,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/chicken,spicy,wok?random=85"}
+    ,{"name":"夫妻肺片","calories":720,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/beef,offal,sichuan?random=86"}
+    ,{"name":"麻婆豆腐","calories":560,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/tofu,spicy,sichuan?random=87"}
+    ,{"name":"水煮鱼","calories":780,"category":"正餐/川菜","image_url":"https://loremflickr.com/400/300/fish,spicy,sichuan?random=88"}
+    ,{"name":"锅包肉","calories":860,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,crispy,china?random=89"}
+    ,{"name":"东坡肉","calories":920,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,braised,chinese?random=90"}
+    ,{"name":"清蒸鲈鱼","calories":520,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/fish,steamed,chinese?random=91"}
+    ,{"name":"扬州炒饭","calories":700,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/fried,rice,egg?random=92"}
+    ,{"name":"狮子头","calories":780,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/meatball,braised,chinese?random=93"}
+    ,{"name":"白切鸡","calories":540,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/cantonese,chicken?random=94"}
+    ,{"name":"豉汁蒸排骨","calories":720,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/steam,pork,ribs?random=95"}
+    ,{"name":"广式烧鹅","calories":860,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/roast,goose,cantonese?random=96"}
+    ,{"name":"虾饺","calories":420,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/dim sum,shrimp,dumplings?random=97"}
+    ,{"name":"烧卖","calories":460,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/dim sum,siu mai?random=98"}
+    ,{"name":"叉烧包","calories":480,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/dim sum,char siu bun?random=99"}
+    ,{"name":"云吞面","calories":620,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/wonton,noodles,soup?random=100"}
+    ,{"name":"热干面","calories":650,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles, sesame, wuhan?random=101"}
+    ,{"name":"臊子面","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,shaanxi,china?random=102"}
+    ,{"name":"担担面","calories":660,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,spicy,sichuan?random=103"}
+    ,{"name":"河南烩面","calories":680,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,henan,china?random=104"}
+    ,{"name":"广东肠粉","calories":420,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/rice,roll,dim sum?random=105"}
+    ,{"name":"馄饨","calories":450,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/wonton,soup,chinese?random=106"}
+    ,{"name":"豆腐脑","calories":220,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/tofu,pudding,breakfast?random=107"}
+    ,{"name":"烧麦","calories":480,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/shaomai,dim sum?random=108"}
+    ,{"name":"皮蛋瘦肉粥","calories":320,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/congee,century egg,pork?random=109"}
+    ,{"name":"大饼夹一切","calories":680,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/flatbread,streetfood,china?random=110"}
+    ,{"name":"臭豆腐","calories":380,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/stinky,tofu,streetfood?random=111"}
+    ,{"name":"糖葫芦","calories":280,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/candied,haws,dessert?random=112"}
+    ,{"name":"烤红薯","calories":260,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/roasted,sweet potato?random=113"}
+    ,{"name":"清蒸大闸蟹","calories":540,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/crab,steamed,china?random=114"}
+    ,{"name":"天妇罗","calories":620,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/tempura,japanese?random=115"}
+    ,{"name":"照烧鸡","calories":680,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/teriyaki,chicken,japanese?random=116"}
+    ,{"name":"味增汤","calories":120,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/miso,soup,japanese?random=117"}
+    ,{"name":"亲子丼","calories":640,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/oyakodon,rice,bowl?random=118"}
+    ,{"name":"炸猪排饭","calories":780,"category":"正餐/日料","image_url":"https://loremflickr.com/400/300/tonkatsu,pork,cutlet?random=119"}
+    ,{"name":"凯撒沙拉","calories":420,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/caesar,salad,western?random=120"}
+    ,{"name":"卡邦尼意面","calories":760,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/pasta,carbonara,italian?random=121"}
+    ,{"name":"罗宋汤","calories":280,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/borscht,soup,western?random=122"}
+    ,{"name":"焗饭","calories":720,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/baked,rice,cheese?random=123"}
+    ,{"name":"番茄意面","calories":700,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/pasta,tomato,italian?random=124"}
+    ,{"name":"海鲜意面","calories":740,"category":"正餐/西餐","image_url":"https://loremflickr.com/400/300/pasta,seafood,italian?random=125"}
+    ,{"name":"提拉米苏","calories":480,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/tiramisu,dessert?random=126"}
+    ,{"name":"焦糖布丁","calories":420,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/caramel,pudding,dessert?random=127"}
+    ,{"name":"千层蛋糕","calories":520,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/mille crepe,cake?random=128"}
+    ,{"name":"抹茶拿铁","calories":280,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/matcha,latte,drink?random=129"}
+    ,{"name":"红豆奶茶","calories":380,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/red bean,milk tea?random=130"}
+    ,{"name":"美式咖啡","calories":15,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/coffee,americano?random=131"}
+    ,{"name":"烤羊肉串","calories":720,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/kebab,lamb,barbecue?random=132"}
+    ,{"name":"烤五花肉","calories":820,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/barbecue,pork,belly?random=133"}
+    ,{"name":"烤生蚝","calories":480,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/oyster,grilled?random=134"}
+    ,{"name":"烤鱿鱼","calories":520,"category":"休闲/夜宵/烧烤","image_url":"https://loremflickr.com/400/300/squid,grilled?random=135"}
+    ,{"name":"炸鸡排","calories":780,"category":"休闲/夜宵/炸物","image_url":"https://loremflickr.com/400/300/fried,chicken,cutlet?random=136"}
+    ,{"name":"可乐鸡翅","calories":720,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/chicken,wings,cola?random=137"}
+    ,{"name":"青椒肉丝","calories":620,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,stir fry,pepper?random=138"}
+    ,{"name":"木须肉","calories":680,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,egg,stir fry?random=139"}
+    ,{"name":"红烧排骨","calories":820,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,ribs,braised?random=140"}
+    ,{"name":"粉蒸肉","calories":860,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,steamed,rice flour?random=141"}
+    ,{"name":"糖醋里脊","calories":780,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/pork,sweet sour,chinese?random=142"}
+    ,{"name":"酸辣土豆丝","calories":360,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/potato,shreds,sour spicy?random=143"}
+    ,{"name":"粉丝煲","calories":600,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/vermicelli,pot,chinese?random=144"}
+    ,{"name":"蒜蓉粉丝蒸虾","calories":520,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/shrimp,garlic,vermicelli?random=145"}
+    ,{"name":"鸡汤馄饨","calories":540,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/wonton,soup,chicken?random=146"}
+    ,{"name":"酸菜牛肉米线","calories":680,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,rice,beef?random=147"}
+    ,{"name":"鸡排饭","calories":780,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/chicken,cutlet,rice?random=148"}
+    ,{"name":"亲子鸡肉盖饭","calories":720,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/chicken,egg,rice bowl?random=149"}
+    ,{"name":"牛肉粒炒饭","calories":760,"category":"外卖/快餐/盖饭","image_url":"https://loremflickr.com/400/300/beef,fried rice?random=150"}
+    ,{"name":"广式烧腊拼盘","calories":920,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/roast,meat,cantonese?random=151"}
+    ,{"name":"清炒西兰花","calories":260,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/vegetable,broccoli,stir fry?random=152"}
+    ,{"name":"西红柿炖牛腩","calories":780,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/beef,tomato,stew?random=153"}
+    ,{"name":"香菇滑鸡","calories":680,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/chicken,mushroom,stew?random=154"}
+    ,{"name":"清蒸鲈鱼","calories":520,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/fish,steamed,chinese?random=155"}
+    ,{"name":"牛肉粉丝汤","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/beef,vermicelli,soup?random=156"}
+    ,{"name":"糯米饭团","calories":460,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/rice ball,glutinous?random=157"}
+    ,{"name":"紫米粥","calories":260,"category":"日常/早餐/中式","image_url":"https://loremflickr.com/400/300/porridge,black rice?random=158"}
+    ,{"name":"广式早茶拼盘","calories":740,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/dim sum,assorted?random=159"}
+    ,{"name":"佛跳墙","calories":980,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/seafood,soup,china?random=160"}
+    ,{"name":"沙茶面","calories":680,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,shacha,fujian?random=161"}
+    ,{"name":"小龙虾","calories":720,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/crayfish,spicy?random=162"}
+    ,{"name":"煲仔饭","calories":780,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/claypot,rice,cantonese?random=163"}
+    ,{"name":"生煎馒头","calories":520,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/dumplings,pan-fried,shanghai?random=164"}
+    ,{"name":"糯米糍","calories":420,"category":"休闲/下午茶","image_url":"https://loremflickr.com/400/300/dessert,glutinous rice ball?random=165"}
+    ,{"name":"广式烧卖","calories":460,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/siu mai,dim sum?random=166"}
+    ,{"name":"牛肉锅贴","calories":540,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/potsticker,beef?random=167"}
+    ,{"name":"鸡丝凉皮","calories":520,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/liangpi,cold noodles?random=168"}
+    ,{"name":"酸辣汤","calories":180,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/hot and sour,soup?random=169"}
+    ,{"name":"新疆大盘鸡","calories":880,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/chicken,spicy,xinjiang?random=170"}
+    ,{"name":"羊肉泡馍","calories":820,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/lamb,bread,soup?random=171"}
+    ,{"name":"东北大拉皮","calories":480,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/noodles,cold,china?random=172"}
+    ,{"name":"锅盔夹菜","calories":640,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/flatbread,stuffed?random=173"}
+    ,{"name":"葱油鸡","calories":620,"category":"正餐/家常菜","image_url":"https://loremflickr.com/400/300/chicken,scallion,chinese?random=174"}
+    ,{"name":"蚵仔煎","calories":620,"category":"外卖/快餐/小吃","image_url":"https://loremflickr.com/400/300/oyster,omelette,taiwan?random=175"}
+    ,{"name":"牛肉粉","calories":640,"category":"外卖/快餐/面食","image_url":"https://loremflickr.com/400/300/noodles,beef,soup?random=176"}
+    ,{"name":"热奶茶","calories":360,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/milk,tea,hot?random=177"}
+    ,{"name":"水果茶","calories":220,"category":"休闲/饮品/奶茶","image_url":"https://loremflickr.com/400/300/fruit,tea,drink?random=178"}
+    ,{"name":"盐焗鸡","calories":740,"category":"正餐/粤菜","image_url":"https://loremflickr.com/400/300/chicken,salted,cantonese?random=179"}
+  ]
+}
