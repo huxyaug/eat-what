@@ -13,8 +13,9 @@ import AIChat from './pages/AIChat'
 
 function RequireAuth() {
   const { user, initialized } = useApp()
-  if (!initialized) return <Login />
-  if (!user) return <Login />
+  const location = useLocation()
+  if (!initialized) return <Navigate to="/login" state={{ from: location }} replace />
+  if (!user) return <Navigate to="/login" state={{ from: location }} replace />
   return <Outlet />
 }
 
