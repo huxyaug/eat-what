@@ -9,6 +9,9 @@ type Ctx = {
   categories: Category[]
   refreshDishes: () => Promise<void>
   refreshCategories: () => Promise<void>
+  authPromptOpen: boolean
+  dismissAuthPrompt: () => void
+  triggerAuthPrompt: () => void
 }
 
 const C = createContext<Ctx | null>(null)
@@ -18,6 +21,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [initialized, setInitialized] = useState(false)
   const [dishes, setDishes] = useState<Dish[]>([])
   const [categories, setCategories] = useState<Category[]>([])
+  const [authPromptOpen, setAuthPromptOpen] = useState(false)
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -31,6 +35,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       sub.subscription.unsubscribe()
     }
   }, [])
+
+  useEffect(() => {
+    if (!initialized) return
+    const dismissed = sessionStorage.getItem('auth_prompt_dismissed') === '1'
+    if (!user && !dismissed) setAuthPromptOpen(true)
+  }, [initialized, user])
 
 
   const refreshDishes = async () => {
@@ -55,16 +65,25 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (user) {
+      try { localStorage.setItem('user_id', user.id) } catch {}
       refreshCategories()
       refreshDishes()
     } else {
       setDishes([])
+      try { localStorage.removeItem('user_id') } catch {}
     }
   }, [user])
 
+  const dismissAuthPrompt = () => {
+    setAuthPromptOpen(false)
+    try { sessionStorage.setItem('auth_prompt_dismissed', '1') } catch {}
+  }
+
+  const triggerAuthPrompt = () => setAuthPromptOpen(true)
+
   const value = useMemo(
-    () => ({ user, initialized, dishes, categories, refreshDishes, refreshCategories }),
-    [user, initialized, dishes, categories]
+    () => ({ user, initialized, dishes, categories, refreshDishes, refreshCategories, authPromptOpen, dismissAuthPrompt, triggerAuthPrompt }),
+    [user, initialized, dishes, categories, authPromptOpen]
   )
 
   return <C.Provider value={value}>{children}</C.Provider>
