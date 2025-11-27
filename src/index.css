@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+html, body, #root { height: 100%; }
+:root { --brand: #FF2442; --bg: #F8F8F8; --text: #333333; }
+body { background: var(--bg); color: var(--text); }
+body[data-theme='classic'] { --brand: #FF2442; --bg: #F8F8F8; --text: #333333; }
+body[data-theme='cyber'] { --brand: #7C3AED; --bg: #0f1226; --text: #e5e7eb; }
+body[data-theme='anime'] { --brand: #FF7B9C; --bg: #FFF7FB; --text: #2d2d2d; }
+
+.text-brand-red { color: var(--brand) !important; }
+.bg-brand-red { background-color: var(--brand) !important; }
+.bg-bg { background-color: var(--bg) !important; }
+.text-text { color: var(--text) !important; }
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-3 font-semibold transition-transform active:scale-95;
+}
+
+.card {
+  @apply avoid-break bg-white rounded-xl shadow-md border border-white/0 overflow-hidden;
+}
+.card-ghost {
+  @apply bg-gradient-to-b from-white to-white/80 rounded-xl shadow-lg;
+}
+.tag {
+  @apply text-xs px-2 py-1 rounded-full bg-white/90 shadow;
+}
+.input-wrap {
+  @apply flex items-center gap-2 rounded-xl px-3 py-2 border shadow-sm;
+}
+.input-pink {
+  @apply bg-gradient-to-r from-pink-50 to-pink-100 border-pink-200;
+}
+
+.masonry {
+  @apply columns-2 gap-3 px-4 mt-3;
+}
+
+.blur-nav {
+  @apply fixed bottom-0 left-0 right-0 backdrop-blur-md bg-white/80 border-t border-gray-200;
+}
+
+.chips {
+  @apply pl-4 mt-4 flex flex-nowrap gap-3 overflow-x-auto; scroll-snap-type: x mandatory;
+}
+.chip {
+  @apply px-5 py-2 rounded-full bg-zinc-100 text-gray-600 active:scale-95 transition-transform whitespace-nowrap shrink-0; scroll-snap-align: start;
+}
+.chip-active {
+  @apply bg-[#FF2442] text-white font-semibold shadow-md;
+}
+
+.skeleton {
+  @apply rounded-xl bg-gray-200 animate-pulse;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.pop-in { animation: pop 200ms ease-out; }
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.15); }
+  60% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+.heartbeat { animation: heartbeat 400ms ease-out; }
+
+.toast {
+  @apply fixed bottom-20 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-xl shadow-lg;
+}
+@keyframes confetti {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(200px) rotate(360deg); opacity: 0; }
+}
+.confetti-piece {
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  animation: confetti 1.2s ease-out forwards;
+}
+
+.flip {
+  perspective: 1000px;
+}
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 400ms ease;
+}
+.flip-front, .flip-back {
+  backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.poster {
+  @apply bg-white rounded-xl p-5 text-center shadow-xl;
+}
+
+@keyframes slotSpin {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+.slot-box { @apply bg-white rounded-xl border shadow-md overflow-hidden; height: 64px; }
+.slot-inner { display: flex; flex-direction: column; }
+.slot-item { @apply h-16 flex items-center justify-center text-lg font-bold; }
+
+/* Hide native scrollbars for horizontal chip rows */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
