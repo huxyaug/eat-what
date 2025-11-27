@@ -1,21 +1,21 @@
-import { Outlet, Route, Routes } from 'react-router-dom'
-import { useEffect, Suspense, lazy } from 'react'
+import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { AppProvider, useApp } from './context/AppContext'
+import Login from './pages/Login'
+import Home from './pages/Home'
+import Add from './pages/Add'
+import Draw from './pages/Draw'
+import Categories from './pages/Categories'
+import Settings from './pages/Settings'
+import AuthPhone from './pages/AuthPhone'
 import BottomNav from './components/BottomNav'
-import AuthDialog from './components/AuthDialog'
-
-const Login = lazy(() => import('./pages/Login'))
-const Home = lazy(() => import('./pages/Home'))
-const Add = lazy(() => import('./pages/Add'))
-const Draw = lazy(() => import('./pages/Draw'))
-const Categories = lazy(() => import('./pages/Categories'))
-const Settings = lazy(() => import('./pages/Settings'))
-const AuthPhone = lazy(() => import('./pages/AuthPhone'))
-const AIChat = lazy(() => import('./pages/AIChat'))
+import AIChat from './pages/AIChat'
 
 function RequireAuth() {
-  const { initialized } = useApp()
+  const { user, initialized } = useApp()
+  const location = useLocation()
   if (!initialized) return null
+  if (!user) return <Navigate to="/login" state={{ from: location }} replace />
   return <Outlet />
 }
 
@@ -29,21 +29,19 @@ export default function App() {
   return (
     <AppProvider>
       <div className="min-h-screen bg-bg text-text">
-        <Suspense fallback={<div className="p-6 text-center text-sm text-gray-500">页面加载中…</div>}>
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/phone" element={<AuthPhone />} />
-            <Route element={<RequireAuth />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/add" element={<Add />} />
-              <Route path="/draw" element={<Draw />} />
-              <Route path="/categories" element={<Categories />} />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/ai" element={<AIChat />} />
-            </Route>
-          </Routes>
-        </Suspense>
-        <AuthDialog />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/phone" element={<AuthPhone />} />
+          <Route element={<RequireAuth />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/add" element={<Add />} />
+            <Route path="/draw" element={<Draw />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/ai" element={<AIChat />} />
+            
+          </Route>
+        </Routes>
         <BottomNav />
       </div>
     </AppProvider>

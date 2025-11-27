@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.npm-cache/
 
 # Dependencies (最占地方的那个！)
 node_modules

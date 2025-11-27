@@ -1,10 +1,23 @@
+async function fetchWithTimeout(url, init, ms = 15000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), ms);
+    try {
+        const res = await fetch(url, { ...init, signal: controller.signal });
+        return res;
+    }
+    finally {
+        clearTimeout(timer);
+    }
+}
 export async function generateDishCaption(name, calories) {
     const { endpoint, model, key } = getAIEnv();
-    const res = await fetch(endpoint, {
+    const res = await fetchWithTimeout(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
         body: JSON.stringify({
             model,
+            temperature: 0.8,
+            max_tokens: 256,
             messages: [
                 { role: 'system', content: '你是美食推荐助手，用简短中文文案给出友好建议。' },
                 { role: 'user', content: `菜名：${name}；热量：${calories}kcal。请生成一句温柔的推荐文案，风格像小红书。` },
@@ -23,11 +36,13 @@ export async function suggestDishInfo(name) {
     const { endpoint, model, key } = getAIEnv();
     if (!name)
         throw new Error('缺少菜名');
-    const res = await fetch(endpoint, {
+    const res = await fetchWithTimeout(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
         body: JSON.stringify({
             model,
+            temperature: 0.3,
+            max_tokens: 256,
             messages: [
                 { role: 'system', content: '返回 JSON，不要解释。字段：calories(整数)、keywords(英文逗号分隔关键词)。' },
                 { role: 'user', content: `菜名：${name}。根据常见做法估算热量，并给出用于图片检索的英文关键词。严格只返回 JSON。` },
@@ -88,10 +103,15 @@ export function imageUrlForDishName(name, w = 400, h = 300) {
 }
 export async function chatRecommend(messages) {
     const { endpoint, model, key } = getAIEnv();
-    const res = await fetch(endpoint, {
+    const res = await fetchWithTimeout(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
-        body: JSON.stringify({ model, messages: [{ role: 'system', content: '你是美食决策助手，围绕“今天吃什么”进行中文对话，建议具体菜品与分类，并兼顾健康与均衡。回答简短。' }, ...messages] }),
+        body: JSON.stringify({
+            model,
+            temperature: 0.7,
+            max_tokens: 256,
+            messages: [{ role: 'system', content: '你是美食决策助手，围绕“今天吃什么”进行中文对话，建议具体菜品与分类，并兼顾健康与均衡。回答简短。' }, ...messages]
+        }),
     });
     if (!res.ok)
         throw new Error('AI 请求失败');
@@ -103,11 +123,13 @@ export async function chatRecommend(messages) {
 }
 export async function generateShoppingList(context) {
     const { endpoint, model, key } = getAIEnv();
-    const res = await fetch(endpoint, {
+    const res = await fetchWithTimeout(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
         body: JSON.stringify({
             model,
+            temperature: 0.2,
+            max_tokens: 256,
             messages: [
                 { role: 'system', content: '根据用户的饮食建议生成购物清单，返回 JSON 数组，每项包含 item(中文食材名)、qty(数量或“适量”)。严格只返回 JSON。' },
                 { role: 'user', content: context },

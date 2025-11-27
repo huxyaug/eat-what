@@ -9,9 +9,6 @@ type Ctx = {
   categories: Category[]
   refreshDishes: () => Promise<void>
   refreshCategories: () => Promise<void>
-  authPromptOpen: boolean
-  dismissAuthPrompt: (remember?: boolean) => void
-  triggerAuthPrompt: () => void
 }
 
 const C = createContext<Ctx | null>(null)
@@ -21,7 +18,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [initialized, setInitialized] = useState(false)
   const [dishes, setDishes] = useState<Dish[]>([])
   const [categories, setCategories] = useState<Category[]>([])
-  const [authPromptOpen, setAuthPromptOpen] = useState(false)
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -36,11 +32,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
-  useEffect(() => {
-    const seen = localStorage.getItem('auth_prompt_seen') === '1'
-    const dismissed = sessionStorage.getItem('auth_prompt_dismissed') === '1'
-    if (!seen && !dismissed && !user) setAuthPromptOpen(true)
-  }, [user, initialized])
 
   const refreshDishes = async () => {
     if (!user) return
@@ -71,17 +62,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [user])
 
-  const dismissAuthPrompt = (remember?: boolean) => {
-    setAuthPromptOpen(false)
-    sessionStorage.setItem('auth_prompt_dismissed', '1')
-    if (remember) localStorage.setItem('auth_prompt_seen', '1')
-  }
-
-  const triggerAuthPrompt = () => setAuthPromptOpen(true)
-
   const value = useMemo(
-    () => ({ user, initialized, dishes, categories, refreshDishes, refreshCategories, authPromptOpen, dismissAuthPrompt, triggerAuthPrompt }),
-    [user, initialized, dishes, categories, authPromptOpen]
+    () => ({ user, initialized, dishes, categories, refreshDishes, refreshCategories }),
+    [user, initialized, dishes, categories]
   )
 
   return <C.Provider value={value}>{children}</C.Provider>
